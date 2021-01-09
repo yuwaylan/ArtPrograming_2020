@@ -16,6 +16,7 @@ Pawn =====:if(step==1):(i,j+2) (i,j+1)
            else:(i,j+1)
            if can eat:(i+1,j+1) (i-1,j+1)
 */
+#include <iostream>
 
 struct step
 {
@@ -28,27 +29,93 @@ struct step
     int grade;
 };
 
+
 class chess
 {
 public:
-    void generate_steps() {};
+    int x;
+    int y;
+    int dest_x;
+    int dest_y;
+    int grade=0;
     struct step steps[8];
-protected:
-    int piece;
-    
+    void generate_steps() {};
+    int generate_grade(){return 0;};
+    int get_X(){return 0;};
+    int get_Y(){return 0;};
 };
-
 
 class King : public chess
 {
 public:
     King(int peice_x, int peice_y){
-
+        x = peice_x;
+        y = peice_y;
     };
     int count_step = 8;
-    int x;
-    int y;
+   
     
     
 };
+
+class Queen : public chess
+{
+public:
+    Queen(int peice_x, int peice_y){
+        x = peice_x;
+        y = peice_y;
+    };
+    int count_step = 8;
+    
+    
+    
+};
+
+class Bishop : public chess
+{
+public:
+    Bishop(int peice_x, int peice_y){
+        x = peice_x;
+        y = peice_y;
+    };
+    int count_step = 8;
+    
+    
+    
+};
+class Knight : public chess
+{
+public:
+    Knight(int peice_x, int peice_y){
+        x = peice_x;
+        y = peice_y;
+    };
+    int count_step = 8;
+    
+    
+    
+};
+class Rook : public chess
+{
+public:
+    Rook(int peice_x, int peice_y){
+        x = peice_x;
+        y = peice_y;
+    };
+    int count_step = 8;
+    
+    
+    
+};
+class Pawn : public chess
+{
+public:
+    Pawn(int peice_x, int peice_y){
+        x = peice_x;
+        y = peice_y;
+    };
+    int count_step = 8;
+    
+};
+
  
