@@ -6,6 +6,9 @@
 
 #define FAIL_INVALID_STEP 0
 #define SUCCEED 1
+
+#define ifdebug true
+
 using namespace std;
 
 struct Piece
@@ -124,7 +127,7 @@ bool removeNode(struct Node* root, int id, int x, int y)
 		{
 			struct Node* t = temp;
             if(!pre->pNext->pNext){
-                pre->pNext = 0;
+                pre->pNext = 0;//應該是刪除最後一個吧？
             }else{
             pre->pNext = pre->pNext->pNext;
             delete t;
@@ -307,33 +310,28 @@ void play(int me, string chessfile)
 
 
 struct get_Steps{
-    int best_Src_X=0;
-    int best_Src_Y=1;
-    int best_Dst_X=0;
-    int best_Dst_Y=2;
-    int best_grade=0;
+    int best_Src_X;
+    int best_Src_Y;
+    int best_Dst_X;
+    int best_Dst_Y;
+    int best_grade;
 };
-//int* get_Pos(){
-//    get_Steps g;
-//    static int  r[2]={g.best_Dst_X,g.best_Dst_Y};
-//
-//
-//    return r;
-//
-//};
-//int* get_Chess(){
-//    get_Steps g;
-//    static int  r[2]={g.best_Src_X,g.best_Src_Y};
-//
-//    return r;
-//};
+int dx,dy,sx,sy;
+
+int* get_Pos(){
+    static int  r[2]={dx,dy};
+    return r;
+};
+int* get_Chess(){
+    static int  r[2]={sx,sy};
+    return r;
+};
 
 void set_chesses(int who ,struct Node* root){
     int shift_who=(who>1?10:0);
     int highest_index=0;
-    struct Node* temp;
     struct get_Steps peices[16];
-    
+    struct Node* temp;
     temp = root->pNext;
     
     while (temp)
@@ -347,7 +345,7 @@ void set_chesses(int who ,struct Node* root){
             peices[id-1].best_Src_Y = temp->piece.y;
             switch (id) {
                 case 1:{
-                    King k(temp->piece.x,temp->piece.y);
+                    King k(temp->piece.x, temp->piece.y, who);
                     k.generate_steps();
                     peices[id-1].best_Dst_X = k.dest_x;
                     peices[id-1].best_Dst_Y = k.dest_y;
@@ -355,7 +353,7 @@ void set_chesses(int who ,struct Node* root){
                     break;
                 }
                 case 2:{
-                    Queen q(temp->piece.x,temp->piece.y);
+                    Queen q(temp->piece.x, temp->piece.y, who);
                     q.generate_steps();
                     peices[id-1].best_Dst_X = q.dest_x;
                     peices[id-1].best_Dst_Y = q.dest_y;
@@ -363,7 +361,7 @@ void set_chesses(int who ,struct Node* root){
                     break;
                 }
                 case 3:{
-                    Bishop b(temp->piece.x,temp->piece.y);
+                    Bishop b(temp->piece.x, temp->piece.y, who);
                     b.generate_steps();
                     peices[id-1].best_Dst_X = b.dest_x;
                     peices[id-1].best_Dst_Y = b.dest_y;
@@ -371,7 +369,7 @@ void set_chesses(int who ,struct Node* root){
                     break;
                 }
                 case 4:{
-                    Knight k(temp->piece.x,temp->piece.y);
+                    Knight k(temp->piece.x, temp->piece.y, who);
                     k.generate_steps();
                     peices[id-1].best_Dst_X = k.dest_x;
                     peices[id-1].best_Dst_Y = k.dest_y;
@@ -379,7 +377,7 @@ void set_chesses(int who ,struct Node* root){
                     break;
                 }
                 case 5:{
-                    Rook r(temp->piece.x,temp->piece.y);
+                    Rook r(temp->piece.x, temp->piece.y, who);
                     r.generate_steps();
                     peices[id-1].best_Dst_X = r.dest_x;
                     peices[id-1].best_Dst_Y = r.dest_y;
@@ -387,7 +385,7 @@ void set_chesses(int who ,struct Node* root){
                     break;
                 }
                 case 6:{
-                    Pawn p(temp->piece.x,temp->piece.y);
+                    Pawn p(temp->piece.x, temp->piece.y, who);
                     p.generate_steps();
                     peices[id-1].best_Dst_X = p.dest_x;
                     peices[id-1].best_Dst_Y = p.dest_y;
@@ -401,11 +399,24 @@ void set_chesses(int who ,struct Node* root){
         temp = temp->pNext;
     }//end while
     
+    int tmp_high=0;
     //determin heighest grade
     for(int i =0;i<16;i++){
-        int tmp_high=0;
         
+        if(peices[i].best_grade>tmp_high){
+            tmp_high = peices[i].best_grade;
+            highest_index = i;
+        }
     }
+    if(ifdebug){
+    cout<<"best grade = "<<peices[highest_index].best_grade<<endl;
+    cout<<"best move = "<<peices[highest_index].best_Src_X<<","<<peices[highest_index].best_Src_Y <<" to "<< peices[highest_index].best_Dst_X<<","<<peices[highest_index].best_Dst_Y<<endl;
+    }
+    dx = peices[highest_index].best_Dst_X;
+    dy = peices[highest_index].best_Dst_Y;
+    sx = peices[highest_index].best_Src_X;
+    sy = peices[highest_index].best_Src_Y;
+    
     
     
     
@@ -419,10 +430,11 @@ void set_chesses(int who ,struct Node* root){
 int main(int argc, char* argv[])
 {
 	int me = 0;
-//    cout<<"argc:=="<<argc<<endl;
-//	for (int i = 0; i < argc; i++) {
-//		cout << argv[i] << endl;
-//	}
+    if(ifdebug){
+    cout<<"argc:=="<<argc<<endl;
+    for (int i = 0; i < argc; i++) {
+        cout << argv[i] << endl;
+    }}
 	if (argc == 3)
 		me = atoi(argv[1]);
 	play(me, argv[2]);
