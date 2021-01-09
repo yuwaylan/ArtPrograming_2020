@@ -331,6 +331,7 @@ void set_chesses(int who ,struct Node* root){
     int shift_who=(who>1?10:0);
     int highest_index=0;
     struct get_Steps peices[16];
+    struct Node* board_list = root;
     struct Node* temp;
     temp = root->pNext;
     
@@ -345,7 +346,7 @@ void set_chesses(int who ,struct Node* root){
             peices[id-1].best_Src_Y = temp->piece.y;
             switch (id) {
                 case 1:{
-                    King k(temp->piece.x, temp->piece.y, who);
+                    King k(temp->piece.x, temp->piece.y, who, board_list);
                     k.generate_steps();
                     peices[id-1].best_Dst_X = k.dest_x;
                     peices[id-1].best_Dst_Y = k.dest_y;
@@ -353,7 +354,7 @@ void set_chesses(int who ,struct Node* root){
                     break;
                 }
                 case 2:{
-                    Queen q(temp->piece.x, temp->piece.y, who);
+                    Queen q(temp->piece.x, temp->piece.y, who, board_list);
                     q.generate_steps();
                     peices[id-1].best_Dst_X = q.dest_x;
                     peices[id-1].best_Dst_Y = q.dest_y;
@@ -361,7 +362,7 @@ void set_chesses(int who ,struct Node* root){
                     break;
                 }
                 case 3:{
-                    Bishop b(temp->piece.x, temp->piece.y, who);
+                    Bishop b(temp->piece.x, temp->piece.y, who, board_list);
                     b.generate_steps();
                     peices[id-1].best_Dst_X = b.dest_x;
                     peices[id-1].best_Dst_Y = b.dest_y;
@@ -369,7 +370,7 @@ void set_chesses(int who ,struct Node* root){
                     break;
                 }
                 case 4:{
-                    Knight k(temp->piece.x, temp->piece.y, who);
+                    Knight k(temp->piece.x, temp->piece.y, who, board_list);
                     k.generate_steps();
                     peices[id-1].best_Dst_X = k.dest_x;
                     peices[id-1].best_Dst_Y = k.dest_y;
@@ -377,7 +378,7 @@ void set_chesses(int who ,struct Node* root){
                     break;
                 }
                 case 5:{
-                    Rook r(temp->piece.x, temp->piece.y, who);
+                    Rook r(temp->piece.x, temp->piece.y, who, board_list);
                     r.generate_steps();
                     peices[id-1].best_Dst_X = r.dest_x;
                     peices[id-1].best_Dst_Y = r.dest_y;
@@ -385,7 +386,7 @@ void set_chesses(int who ,struct Node* root){
                     break;
                 }
                 case 6:{
-                    Pawn p(temp->piece.x, temp->piece.y, who);
+                    Pawn p(temp->piece.x, temp->piece.y, who, board_list);
                     p.generate_steps();
                     peices[id-1].best_Dst_X = p.dest_x;
                     peices[id-1].best_Dst_Y = p.dest_y;
