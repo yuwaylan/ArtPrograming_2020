@@ -1,4 +1,4 @@
-﻿
+
 #include <iostream>
 #include <fstream>
 #include <string>
@@ -253,8 +253,8 @@ void play(int me, string chessfile)
 	readNodesFromFile(file, &root);
 	file.close();
 
-	//clearNodes(&root);
-	//resetNodes(&root);
+//	clearNodes(&root);
+//	resetNodes(&root);
 
 	int board[8][8];
 	setBoardFromNodes(board, &root);
@@ -288,9 +288,10 @@ void play(int me, string chessfile)
 int main(int argc, char* argv[])
 {
 	int me = 0;
-	//for (int i = 0; i < argc; i++) {
-	//	cout << argv[i] << endl;
-	//}
+    cout<<"argc:=="<<argc<<endl;
+	for (int i = 0; i < argc; i++) {
+		cout << argv[i] << endl;
+	}
 	if (argc == 3)
 		me = atoi(argv[1]);
 	play(me, argv[2]);

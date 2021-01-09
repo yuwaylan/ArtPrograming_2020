@@ -3,11 +3,12 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 54;
 	objects = {
 
 /* Begin PBXBuildFile section */
-		E87450F225A6049B00850DDA /* main.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E87450F125A6049B00850DDA /* main.cpp */; };
+		E87450FD25A60AE200850DDA /* westChess.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E87450FC25A60AE200850DDA /* westChess.cpp */; };
+		E874510425A825BD00850DDA /* chesses.cpp in Sources */ = {isa = PBXBuildFile; fileRef = E874510325A825BD00850DDA /* chesses.cpp */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -24,7 +25,8 @@
 
 /* Begin PBXFileReference section */
 		E87450EE25A6049B00850DDA /* Art_programing_final_proj */ = {isa = PBXFileReference; explicitFileType = "compiled.mach-o.executable"; includeInIndex = 0; path = Art_programing_final_proj; sourceTree = BUILT_PRODUCTS_DIR; };
-		E87450F125A6049B00850DDA /* main.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; path = main.cpp; sourceTree = "<group>"; };
+		E87450FC25A60AE200850DDA /* westChess.cpp */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.cpp.cpp; name = westChess.cpp; path = ../../source_code/westChess.cpp; sourceTree = "<group>"; };
+		E874510325A825BD00850DDA /* chesses.cpp */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.cpp.cpp; name = chesses.cpp; path = ../../source_code/chesses.cpp; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -57,7 +59,8 @@
 		E87450F025A6049B00850DDA /* Art_programing_final_proj */ = {
 			isa = PBXGroup;
 			children = (
-				E87450F125A6049B00850DDA /* main.cpp */,
+				E87450FC25A60AE200850DDA /* westChess.cpp */,
+				E874510325A825BD00850DDA /* chesses.cpp */,
 			);
 			path = Art_programing_final_proj;
 			sourceTree = "<group>";
@@ -96,7 +99,7 @@
 				};
 			};
 			buildConfigurationList = E87450E925A6049A00850DDA /* Build configuration list for PBXProject "Art_programing_final_proj" */;
-			compatibilityVersion = "Xcode 9.3";
+			compatibilityVersion = "Xcode 12.0";
 			developmentRegion = en;
 			hasScannedForEncodings = 0;
 			knownRegions = (
@@ -118,7 +121,8 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				E87450F225A6049B00850DDA /* main.cpp in Sources */,
+				E874510425A825BD00850DDA /* chesses.cpp in Sources */,
+				E87450FD25A60AE200850DDA /* westChess.cpp in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
