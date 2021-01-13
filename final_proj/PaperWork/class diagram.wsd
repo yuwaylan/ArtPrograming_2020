@@ -1,0 +1,132 @@
+@startuml
+
+
+object Piece{
+int id
+int x
+int y
+}
+object Node{
+struct Piece piece 
+struct Node* pNext
+}
+object step{
+bool moveable
+int length
+int grade
+int src[2]
+int dest[2]
+}
+
+enum enum{
+Kw = 1
+Qw
+Nw
+Rw 
+Pw
+Kb = 11
+Qb
+Nb
+Rb 
+Pb
+}
+
+
+
+
+class chess{
++const int border = 8
++struct Node* b
++struct step steps[8]
++int x
++int y
++int me
++int id
++int shift_me
++int dest_x
++int dest_y
++int grade
++bool many_steps
++int dest_has_chess(int dx, int dy)
++int generate_grade(int count_steps)
++void generate_steps()
++int hi_grade(int op_id, int dx, int dy)
++bool is_that_chess_me(int id)
++step go_F(int steps)
++step go_L(int steps)
++step go_R(int steps)
++step go_B(int steps)
++step go_BL(int steps)
++step go_BR(int steps)
++step go_FL(int steps)
++step go_FR(int steps)
+    
+}
+
+
+class King{
+    -int count_step 
+    -int grade_Arr[4]
+    -step_length
+    +void generate_steps()
+    +King(int peice_x, int peice_y, int who, Node* node)
+
+}
+
+class Queen{
+    -int count_step 
+    -int grade_Arr[8]
+    -step_length
+    +void generate_steps()
+    +Queen(int peice_x, int peice_y, int who, Node* node)
+
+}
+
+class Bishop{
+    -int count_step 
+    -int grade_Arr[4]
+    -step_length
+    +void generate_steps()
+    +Bishop(int peice_x, int peice_y, int who, Node* node)
+
+}
+
+class Knight{
+    -int count_step 
+    -int grade_Arr[8]
+    -step_length
+    +void generate_steps()
+    +Knight(int peice_x, int peice_y, int who, Node* node)
+
+}
+
+class Rook{
+    -int count_step 
+    -int grade_Arr[4]
+    -step_length
+    +void generate_steps()
+    +Rook(int peice_x, int peice_y, int who, Node* node)
+
+}
+
+class Pawn{
+    -int count_step 
+    -int grade_Arr[3]
+    -step_length
+    -bool can_eat(int x, int y)
+    -bool is_first_step(int x, int y)
+    +void generate_steps()
+    +Pawn(int peice_x, int peice_y, int who, Node* node)
+
+}
+
+
+
+chess <|-- King
+chess <|-- Queen
+chess <|-- Bishop
+chess <|-- Knight
+chess <|-- Rook
+chess <|-- Pawn
+
+@enduml

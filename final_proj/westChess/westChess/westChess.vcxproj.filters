@@ -22,4 +22,8 @@
       <Filter>來源檔案</Filter>
     </ClCompile>
   </ItemGroup>
+  <ItemGroup>
+    <None Include="ClassDiagram.cd" />
+    <None Include="ClassDiagram_main.cd" />
+  </ItemGroup>
 </Project>

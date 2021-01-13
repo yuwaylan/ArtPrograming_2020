@@ -54,6 +54,8 @@ public:
     int x;
     int y;
     int me;
+	int id;
+	int shift_me;
     int dest_x;
     int dest_y;
     int grade=0;
@@ -62,11 +64,14 @@ public:
 
     struct step steps[8];
     void generate_steps() {};
-    int generate_grade(){return 0;};
+    int generate_grade(int count_steps){
+
+
+		return 0;};
 //    int get_X(){return 0;};
 //    int get_Y(){return 0;};
 	bool is_that_chess_me(int id) {
-		int shift_me = (me > 1 ? 10 : 0);
+		
 		if (id - shift_me > 0 && id - shift_me < 10) { return true; }
 		else return false;
 	}
@@ -81,48 +86,323 @@ public:
 			}
 			temp = temp->pNext;
 		}
-		return 999;
-	}
-    int hi_grade(){
-
 		return 0;
+	}
+    int hi_grade(int op_id,int dx,int dy){
+		//如果 id != 0 算一下吃了值不值錢
+		return 110;
 	};
     
     //把go合再一起寫了 因為有的可以走很多步 所以到時候可以用地回
     /*int* go(bool many, int steps, int srcX, int srcY, int method){static int p[2]={0};if(!many){}return p;};*/
 
-    int* go_F(bool many, int steps, int srcX, int srcY){
-		static int p[2]={0}; 
+    step go_F(int steps){
+		static struct step s;
+		if (me > 1) {
+			steps = -steps;
+		}
+		s.grade = 0;
+		s.src[0] = x;
+		s.src[1] = y;
+		s.dest[0] = x;
+		if ((y + steps < 8 && y + steps >= 0)) {
+			s.dest[1] = y + steps;
+			
+			int tmp_id = dest_has_chess(s.dest[0], s.dest[1]);
+			//有棋子?
+			if (tmp_id >= 0) {
+				//是我?
+				if (is_that_chess_me(tmp_id)) {
+					s.dest[1] = y;
+					s.moveable = false;
+					//return go_F(s.moveable, steps - 1, s.dest[0], s.dest[1]);
+				}
+			}
+			// 沒有棋子 || 不是我 =>算分數
+			s.grade = hi_grade(tmp_id, s.dest[0], s.dest[1]);
+			s.moveable = true;
+		}
+		else {
+			//界外
+			s.dest[1] = y;
+			s.moveable = false;
+			/*if (steps > 1) {
+				// 有上一步
+				//return go_F(s.moveable, steps - 1, s.dest[0], s.dest[1]);
+			}
+			else {
+				//沒有上一步
+				return s;
+			}*/
+		}
 
-		return p;
+		s.length = abs(x - s.dest[0]);
+		return s;
 	};
-    int* go_B(bool many, int steps, int srcX, int srcY) {
-		static int p[2] = { 0 };
-		return p;
+
+	step go_B( int steps) {
+		static struct step s;
+		if (me < 1) {
+			steps = -steps;
+		}
+		s.grade = 0;
+		s.src[0] = x;
+		s.src[1] = y; 
+		s.dest[0] = x;
+		if ((y + steps < 8 && y + steps >= 0)) {
+			s.dest[1] = y + steps;
+
+			int tmp_id = dest_has_chess(s.dest[0], s.dest[1]);
+			//有棋子?
+			if (tmp_id >= 0) {
+				//是我?
+				if (is_that_chess_me(tmp_id)) {
+					s.dest[1] = y;
+					s.moveable = false;
+					//return go_F(s.moveable, steps - 1, s.dest[0], s.dest[1]);
+				}
+			}
+			// 沒有棋子 || 不是我 =>算分數
+			s.grade = hi_grade(tmp_id, s.dest[0], s.dest[1]);
+			s.moveable = true;
+		}
+		else {
+			//界外
+			s.dest[1] = y;
+			s.moveable = false;
+		}
+		s.length = abs(x - s.dest[0]);
+		return s;
 	};
-    int* go_L(bool many, int steps, int srcX, int srcY) {
-		static int p[2] = { 0 };
-		return p;
+
+
+	step go_L(int steps) {
+		static struct step s;
+		s.grade = 0;
+		s.src[0] = x;
+		s.src[1] = y;
+		s.dest[1] = y;
+		if ((x - steps < 8 && x - steps >= 0)) {
+			s.dest[0] = x - steps;
+
+			int tmp_id = dest_has_chess(s.dest[0], s.dest[1]);
+			//有棋子?
+			if (tmp_id >= 0) {
+				//是我?
+				if (is_that_chess_me(tmp_id)) {
+					s.dest[0] = x;
+					s.moveable = false;
+					//return go_F(s.moveable, steps - 1, s.dest[0], s.dest[1]);
+				}
+			}
+			// 沒有棋子 || 不是我 =>算分數
+			s.grade = hi_grade(tmp_id, s.dest[0], s.dest[1]);
+			s.moveable = true;
+		}
+		else {
+			//界外
+			s.dest[0] = x;
+			s.moveable = false;
+		}
+		s.length = steps;
+		return s;
 	};
-    int* go_R(bool many, int steps, int srcX, int srcY) {
-		static int p[2] = { 0 };
-		return p;
+
+	step go_R(int steps) {
+		static struct step s;
+		s.grade = 0;
+		s.src[0] = x;
+		s.src[1] = y;
+		s.dest[1] = y;
+		if ((x + steps < 8 && x + steps >= 0)) {
+			s.dest[0] = x + steps;
+
+			int tmp_id = dest_has_chess(s.dest[0], s.dest[1]);
+			//有棋子?
+			if (tmp_id >= 0) {
+				//是我?
+				if (is_that_chess_me(tmp_id)) {
+					s.dest[0] = x;
+					s.moveable = false;
+					//return go_F(s.moveable, steps - 1, s.dest[0], s.dest[1]);
+				}
+			}
+			// 沒有棋子 || 不是我 =>算分數
+			s.grade = hi_grade(tmp_id, s.dest[0], s.dest[1]);
+			s.moveable = true;
+		}
+		else {
+			//界外
+			s.dest[0] = x;
+			s.moveable = false;
+		}
+		return s;
 	};
-    int* go_FR(bool many, int steps, int srcX, int srcY) {
-		static int p[2] = { 0 };
-		return p;
+
+    
+	step go_FR(int steps ) {
+		static struct step s;
+		int step_F = steps;
+		if (me > 1) {
+			step_F = -steps;
+		}
+		s.grade = 0;
+		s.src[0] = x;
+		s.src[1] = y;
+
+		// x+step y+step_f 
+		if ((x + steps < 8 && x + steps >= 0)&& ((y + step_F < 8 && x + step_F >= 0))) {
+			s.dest[0] = x + steps;
+			s.dest[1] = x + step_F;
+
+			int tmp_id = dest_has_chess(s.dest[0], s.dest[1]);
+			//有棋子?
+			if (tmp_id >= 0) {
+				//是我?
+				if (is_that_chess_me(tmp_id)) {
+					s.dest[0] = x;
+					s.moveable = false;
+					//return go_F(s.moveable, steps - 1, s.dest[0], s.dest[1]);
+				}
+			}
+			// 沒有棋子 || 不是我 =>算分數
+			s.grade = hi_grade(tmp_id, s.dest[0], s.dest[1]);
+			s.moveable = true;
+		}
+		else {
+			//界外
+			s.dest[0] = x;
+			s.dest[1] = y;
+			s.moveable = false;
+		}
+		return s;
 	};
-    int* go_FL(bool many, int steps, int srcX, int srcY) {
-		static int p[2] = { 0 };
-		return p;
+
+
+
+
+
+	step go_FL(int steps) {
+		static struct step s;
+		int step_F = steps;
+		if (me > 1) {
+			step_F = -steps;
+		}
+		steps = -steps;
+
+		s.grade = 0;
+		s.src[0] = x;
+		s.src[1] = y;
+
+		// x+step y+step_f 
+		if ((x + steps < 8 && x + steps >= 0) && ((y + step_F < 8 && y + step_F >= 0))) {
+			s.dest[0] = x + steps;
+			s.dest[1] = y + step_F;
+
+			int tmp_id = dest_has_chess(s.dest[0], s.dest[1]);
+			//有棋子?
+			if (tmp_id >= 0) {
+				//是我?
+				if (is_that_chess_me(tmp_id)) {
+					s.dest[0] = x;
+					s.dest[1] = y;
+					s.moveable = false;
+					//return go_F(s.moveable, steps - 1, s.dest[0], s.dest[1]);
+				}
+			}
+			// 沒有棋子 || 不是我 =>算分數
+			s.grade = hi_grade(tmp_id, s.dest[0], s.dest[1]);
+			s.moveable = true;
+		}
+		else {
+			//界外
+			s.dest[0] = x;
+			s.dest[1] = y;
+			s.moveable = false;
+		}
+		return s;
 	};
-    int* go_BR(bool many, int steps, int srcX, int srcY) {
-		static int p[2] = { 0 };
-		return p;
+    
+
+	step go_BR(int steps) {
+		static struct step s;
+		int step_F = steps;
+		if (me < 1) {
+			step_F = -steps;
+		}
+		s.grade = 0;
+		s.src[0] = x;
+		s.src[1] = y;
+
+		// x+step y+step_f 
+		if ((x + steps < 8 && x + steps >= 0) && ((y + step_F < 8 && y + step_F >= 0))) {
+			s.dest[0] = x + steps;
+			s.dest[1] = y + step_F;
+
+			int tmp_id = dest_has_chess(s.dest[0], s.dest[1]);
+			//有棋子?
+			if (tmp_id >= 0) {
+				//是我?
+				if (is_that_chess_me(tmp_id)) {
+					s.dest[0] = x;
+					s.dest[1] = y;
+					s.moveable = false;
+					//return go_F(s.moveable, steps - 1, s.dest[0], s.dest[1]);
+				}
+			}
+			// 沒有棋子 || 不是我 =>算分數
+			s.grade = hi_grade(tmp_id, s.dest[0], s.dest[1]);
+			s.moveable = true;
+		}
+		else {
+			//界外
+			s.dest[0] = x;
+			s.dest[1] = y;
+			s.moveable = false;
+		}
+		return s;
 	};
-    int* go_BL(bool many, int steps, int srcX, int srcY) {
-		static int p[2] = { 0 };
-		return p;
+
+
+	step go_BL( int steps) {
+		static struct step s;
+		int step_F = steps;
+		if (me < 1) {
+			step_F = -steps;
+		}
+		steps = -steps;
+
+		s.grade = 0;
+		s.src[0] = x;
+		s.src[1] = y;
+
+		// x+step y+step_f 
+		if ((x + steps < 8 && x + steps >= 0) && ((y + step_F < 8 && y + step_F >= 0))) {
+			s.dest[0] = x + steps;
+			s.dest[1] = y + step_F;
+
+			int tmp_id = dest_has_chess(s.dest[0], s.dest[1]);
+			//有棋子?
+			if (tmp_id >= 0) {
+				//是我?
+				if (is_that_chess_me(tmp_id)) {
+					s.dest[0] = x;
+					s.dest[1] = y;
+					s.moveable = false;
+					//return go_F(s.moveable, steps - 1, s.dest[0], s.dest[1]);
+				}
+			}
+			// 沒有棋子 || 不是我 =>算分數
+			s.grade = hi_grade(tmp_id, s.dest[0], s.dest[1]);
+			s.moveable = true;
+		}
+		else {
+			//界外
+			s.dest[0] = x;
+			s.dest[1] = y;
+			s.moveable = false;
+		}
+		return s;
 	};
     
     
@@ -132,17 +412,28 @@ class King : public chess
 {
     int count_step = 8;
     int step_length=1;
+	int grade_Arr[4] = { 0 };
 public:
     King(int peice_x, int peice_y, int who, struct Node* node){
+		shift_me = (who > 1 ? 10 : 0);
+		id = 1 + shift_me;
         x = peice_x;
         y = peice_y;
 		b = node;
 		me = who;
         many_steps=false;
+
+		std ::cout << "King build \t";
     };
     void generate_steps(){
-        
+		steps[0] = go_F(1);
+		steps[1] = go_B(1);
+		steps[2] = go_L(1);
+		steps[3] = go_R(1);
+		
+		grade = generate_grade(4);
     }
+	
    
     
     
@@ -153,6 +444,8 @@ class Queen : public chess
     int count_step = 8;
 public:
     Queen(int peice_x, int peice_y, int who, struct Node* node){
+		shift_me = (who > 1 ? 10 : 0);
+		id = 2 + shift_me;
 		x = peice_x;
 		y = peice_y;
 		b = node;
@@ -170,6 +463,8 @@ class Bishop : public chess
     int count_step = 4;
 public:
     Bishop(int peice_x, int peice_y, int who, struct Node* node){
+		shift_me = (who > 1 ? 10 : 0);
+		id = 3 + shift_me;
 		x = peice_x;
 		y = peice_y;
 		b = node;
@@ -185,6 +480,8 @@ class Knight : public chess
     int count_step = 8;
 public:
     Knight(int peice_x, int peice_y, int who, struct Node* node){
+		shift_me = (who > 1 ? 10 : 0);
+		id = 4 + shift_me;
 		x = peice_x;
 		y = peice_y;
 		b = node;
@@ -222,17 +519,17 @@ public:
             steps[i].src[0]=x;
             steps[i].src[1]=y;
 			int temp = dest_has_chess(steps[i].dest[0], steps[i].dest[1]);
-            if(temp<100){
+            if(temp<=0){
                 if(is_that_chess_me(temp)){
                     steps[i].moveable =false;
                 }else{
 					steps[i].moveable = true;
-					steps[i].grade = hi_grade();
+					steps[i].grade = hi_grade(temp , steps[i].dest[0], steps[i].dest[1]);
                 }// is not me end
             }else{
                 // has no chess
                 steps[i].moveable =true;
-				steps[i].grade = hi_grade();
+				steps[i].grade = hi_grade(temp, steps[i].dest[0], steps[i].dest[1]);
             }
             
         }
@@ -250,6 +547,8 @@ class Rook : public chess
     int count_step = 4;
 public:
     Rook(int peice_x, int peice_y, int who, struct Node* node){
+		shift_me = (who > 1 ? 10 : 0);
+		id = 5 + shift_me;
 		x = peice_x;
 		y = peice_y;
 		b = node;
@@ -266,6 +565,8 @@ class Pawn : public chess
     int count_step = 2;
 public:
     Pawn(int peice_x, int peice_y, int who, struct Node* node){
+		shift_me = (who > 1 ? 10 : 0);
+		id = 6 + shift_me;
 		x = peice_x;
 		y = peice_y;
 		b = node;

@@ -1,0 +1,320 @@
+@startuml
+
+skinparam DefaultTextAlignment  center
+:輪到我;
+:取得我的角色;
+repeat
+    :讀取鏈結串列內資料;
+    :決定是不是我\nisme = (資料id - (me>1?10:0));
+    if (isme < 7 && isme > 0) then (yes)
+    :開始產生棋子的分數;
+        if (isme == 1 ) then (yes)
+        :建構King\n   ->chess;
+        :往 ( x , y + (me>1?-1:1) ) 走\n(往前);
+        (G)
+        detach
+        (G)
+        :往 ( x , y + (me>1?1:-1) ) 走\n(往後);
+        (G)
+        detach
+        (G)
+        :往 ( x-1 , y) 走\n(往左);
+        (G)
+        detach
+        (G)
+        :往 ( x+1 , y) 走\n(往右);
+        (G)
+        detach
+        
+
+
+
+        (G)  
+        :選出分數最高的方向;
+        elseif (isme == 2) then (yes)
+        :建構Queen\n   ->chess;
+        repeat
+            :往 ( x-1 , y + (me>1?-1:1) ) 走\n(往左前);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_Y >= 7 || dest_Y < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x-1 , y + (me>1?1:-1) ) 走\n(往左後);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_Y >= 7 || dest_Y < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x+1 , y + (me>1?-1:1) ) 走\n(往右前);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_X >= 7 || dest_X < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x+1 , y + (me>1?1:-1) ) 走\n(往右後);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_X >= 7 || dest_X < 0 ) is (no)
+        :選出分數最高的步數;
+
+        repeat
+            :往 ( x , y + (me>1?-1:1) ) 走\n(往前);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_Y >= 7 || dest_Y < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x , y + (me>1?1:-1) ) 走\n(往後);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_Y >= 7 || dest_Y < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x-1 , y) 走\n(往左);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_X >= 7 || dest_X < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x+1 , y) 走\n(往右);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_X >= 7 || dest_X < 0 ) is (no)
+        :選出分數最高的步數;
+        
+        :選出分數最高的方向;
+
+
+
+        elseif (isme == 3) then (yes)
+        :建構Bishop\n   ->chess;
+        repeat
+            :往 ( x-1 , y + (me>1?-1:1) ) 走\n(往左前);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_Y >= 7 || dest_Y < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x-1 , y + (me>1?1:-1) ) 走\n(往左後);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_Y >= 7 || dest_Y < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x+1 , y + (me>1?-1:1) ) 走\n(往右前);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_X >= 7 || dest_X < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x+1 , y + (me>1?1:-1) ) 走\n(往右後);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_X >= 7 || dest_X < 0 ) is (no)
+        :選出分數最高的步數;
+        
+        :選出分數最高的方向;
+
+
+
+        elseif (isme == 4) then (yes)
+        :建構Knight\n   ->chess;
+        :往 ( x-1 , y + (me>1?-2:2) ) 走\n(往左前);
+        (G)
+        detach
+        (G)
+        :往 ( x+1 , y + (me>1?-2:2) ) 走\n(往右前);
+        (G)
+        detach
+        (G)
+        :往 ( x-1 , y + (me>1?2:-2) ) 走\n(往左後);
+        (G)
+        detach
+        (G)
+        :往 ( x+1 , y + (me>1?2:-2) ) 走\n(往右後);
+        (G)
+        detach
+        (G)
+        :往 ( x-2 , y + (me>1?-1:1) ) 走\n(往左上);
+        (G)
+        detach
+        (G)
+        :往 ( x-2 , y + (me>1?1:-1) ) 走\n(往左下);
+        (G)
+        detach
+        (G)
+        :往 ( x+2 , y + (me>1?-1:1) ) 走\n(往右上);
+        (G)
+        detach
+        (G)
+        :往 ( x+2 , y + (me>1?1:-1) ) 走\n(往右下);
+        (G)
+        detach
+        (G)               
+        :選出分數最高的方向;
+        elseif (isme == 5) then (yes)
+        :建構Roock\n   ->chess;
+        repeat
+            :往 ( x , y + (me>1?-1:1) ) 走\n(往前);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_Y >= 7 || dest_Y < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x , y + (me>1?1:-1) ) 走\n(往後);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_Y >= 7 || dest_Y < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x-1 , y) 走\n(往左);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_X >= 7 || dest_X < 0 ) is (no)
+        :選出分數最高的步數;
+        repeat
+            :往 ( x+1 , y) 走\n(往右);   
+            (G)
+            detach
+            (G)
+        repeat while (dest_X >= 7 || dest_X < 0 ) is (no)
+        :選出分數最高的步數;
+        
+        :選出分數最高的方向;
+        elseif (isme == 6) then (yes)
+        :建構Pawn\n   ->chess;
+        if(\n斜前\n(x+1,y+(me>1?-1:1))\n(x-1,y+(me>1?-1:1))\n有棋子?\n) then (no)
+            :往 ( x , y + (me>1?-1:1) ) 走\n(往前1步);
+            (G)
+            detach
+            (G)
+            if(\n第一次走\n(棋子座標==初始時座標)\n) then (yes)
+            :往 ( x , y + (me>1?-2:2) ) 走\n(往前2步);
+            (G)
+            detach
+            (G)
+            endif
+            
+        else
+            if(是我的棋子) then (yes)
+                :這步分數=0;
+            else
+                (G)
+                detach
+                (G)
+            endif
+        endif
+        :選出分數最高的走法;
+        else () 
+        endif
+    endif
+repeat while (走訪結束) is (no)
+-> yes;
+:比較各個棋子的分數;
+:選出最大的;
+:開始移動;
+:寫入檔案;
+detach
+
+        (S)
+            :分數+=(6-isme);
+            if(現在這步(dest_X,dest_Y)可以吃棋子) then (yes)
+            :記錄這步可以吃;
+            :分數+=可以吃的棋子id\n("目的地座標是否有棋子"的Return值);
+            endif
+            :分數+=目前移動距離\n(abs(src_X - dest_X)||abs(src_Y - dest_Y));
+            :判斷延伸方向是否會被吃;
+            repeat
+            if( (("目的地座標是否有棋子"的Return值)==5,4,3,2) \n遇到會被吃的棋子 && 這步不能吃) then (yes)
+            :這步分數為0;
+            break
+            else
+            :往 ( x-1 , y + (me>1?-1:1) ) 走\n(往左前);  
+            endif
+             
+            repeat while (碰到邊界\n(dest_Y >= 7 || dest_Y < 0)) is (no)
+
+            repeat
+            if( (("目的地座標是否有棋子"的Return值)==5,4,3,2) \n遇到會被吃的棋子 && 這步不能吃) then (yes)
+            :這步分數為0;
+            break
+            else
+            :往 ( x+1 , y + (me>1?-1:1) ) 走\n(往右前);   
+            endif             
+            repeat while (碰到邊界\n(dest_Y >= 7 || dest_Y < 0)) is (no)
+
+             repeat
+            if( (("目的地座標是否有棋子"的Return值)==5,4,3,2) \n遇到會被吃的棋子 && 這步不能吃) then (yes)
+            :這步分數為0;
+            break
+            else
+            :往 ( x-1 , y) 走\n(往左);  
+            endif             
+            repeat while (碰到邊界\n(dest_Y >= 7 || dest_Y < 0)) is (no)
+
+             repeat
+            if( (("目的地座標是否有棋子"的Return值)==5,4,3,2) \n遇到會被吃的棋子 && 這步不能吃) then (yes)
+            :這步分數為0;
+            break
+            else
+            :往 ( x+1 , y) 走\n(往右);    
+            endif             
+            repeat while (碰到邊界\n(dest_Y >= 7 || dest_Y < 0)) is (no)
+
+            repeat
+            if( (("目的地座標是否有棋子"的Return值)==5,4,3,2) \n遇到會被吃的棋子 && 這步不能吃) then (yes)
+            :這步分數為0;
+            break
+            else
+            :往 ( x , y+(me>1?-1:1)) 走\n(往前);    
+            endif             
+            repeat while (碰到邊界\n(dest_Y >= 7 || dest_Y < 0)) is (no)
+
+            :回傳分數;
+
+        (S)
+        detach
+        (G)
+        if (目的地座標有超出邊界) then (No)
+            if (目的地座標是否有棋子) then (Yes)
+                if (目的地座標是否是我的棋子) then (no)
+                :開始計算分數;
+                (S)
+                detach
+                (S)
+                :紀錄分數;
+                else
+                :這步分數為0;
+                endif
+            else
+            ->No;
+            :開始計算分數;
+            (S)
+            detach
+            (S)
+            :紀錄分數;
+            endif
+            
+        else
+        :這步分數為0;        
+        endif
+        (G)
+        detach
+
+@enduml

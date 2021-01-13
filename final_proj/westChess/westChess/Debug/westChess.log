@@ -1,3 +1,3 @@
 ﻿  chesses.cpp
-d:\0987\desktop\westchess\westchess\chesses.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
-  westChess.vcxproj -> D:\0987\Desktop\westChess\Debug\westChess.exe
+d:\0987\documents\github\artprograming_2020\final_proj\westchess\westchess\chesses.cpp : warning C4819: 檔案含有無法在目前字碼頁 (950) 中表示的字元。請以 Unicode 格式儲存檔案以防止資料遺失
+  westChess.vcxproj -> D:\0987\Documents\GitHub\ArtPrograming_2020\final_proj\westChess\Debug\westChess.exe

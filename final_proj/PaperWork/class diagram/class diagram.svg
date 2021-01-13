@@ -1,0 +1,391 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- Generator: Adobe Illustrator 25.0.0, SVG Export Plug-In . SVG Version: 6.00 Build 0)  -->
+<svg version="1.1" id="圖層_1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px"
+	 viewBox="0 0 1858.5 705.3" style="enable-background:new 0 0 1858.5 705.3;" xml:space="preserve">
+<style type="text/css">
+	.st0{filter:url(#fe7phcd728qtn);}
+	.st1{fill:#FEFECE;}
+	.st2{fill:none;stroke:#A80036;stroke-width:1.5;}
+	.st3{fill:#EB937F;stroke:#A80036;}
+	.st4{fill:none;}
+	.st5{enable-background:new    ;}
+	.st6{font-family:'Helvetica';}
+	.st7{font-size:12px;}
+	.st8{font-size:11px;}
+	.st9{letter-spacing:1;}
+	.st10{fill:none;stroke:#C82930;}
+	.st11{fill:#84BE84;stroke:#038048;}
+	.st12{fill:#ADD1B2;stroke:#A80036;}
+	.st13{fill:none;stroke:#A80036;}
+	.st14{fill:#F24D5C;stroke:#C82930;}
+	.st15{font-size:10px;}
+	.st16{letter-spacing:2;}
+	.st17{letter-spacing:3;}
+	.st18{letter-spacing:5;}
+	.st19{letter-spacing:4;}
+	.st20{fill:none;stroke:#038048;}
+</style>
+<filter  height="300%" id="fe7phcd728qtn" width="300%" x="-1" y="-1">
+	<feGaussianBlur  result="blurOut" stdDeviation="2.0"></feGaussianBlur>
+	<feColorMatrix  in="blurOut" result="blurOut2" type="matrix" values="0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 0 .4 0"></feColorMatrix>
+	<feOffset  dx="4.0" dy="4.0" in="blurOut2" result="blurOut3"></feOffset>
+	<feBlend  in="SourceGraphic" in2="blurOut3" mode="normal"></feBlend>
+</filter>
+<g>
+	<g id="enum" class="st0">
+		<rect x="532" y="10.2" class="st1" width="64" height="204.7"/>
+		<rect x="532" y="10.2" class="st2" width="64" height="204.7"/>
+	</g>
+	<ellipse class="st3" cx="547" cy="26.2" rx="11" ry="11"/>
+	<path d="M545.5,20.8L545.5,20.8z M552.6,29.2l-0.8,3.5h-9.1v-0.8c0.7-0.1,1.1-0.2,1.3-0.3c0.2-0.2,0.3-0.6,0.3-1.2v-8.1
+		c0-0.6-0.1-1-0.3-1.2c-0.1-0.1-0.6-0.2-1.3-0.3V20h9l0,3h-0.8c-0.1-0.9-0.3-1.5-0.6-1.6c-0.2-0.2-0.8-0.3-1.7-0.3h-2.4
+		c-0.2,0-0.4,0-0.4,0c0,0,0,0.1,0,0.4v4h2.5c0.6,0,1-0.1,1.2-0.3c0.1-0.2,0.3-0.6,0.4-1.4h0.8v4.7h-0.8c-0.1-0.8-0.3-1.3-0.4-1.5
+		c-0.2-0.2-0.6-0.2-1.2-0.2h-2.5V31c0,0.3,0.1,0.5,0.2,0.5c0.2,0.1,1,0.1,2.2,0.1c1,0,1.7-0.2,2.1-0.5c0.4-0.3,0.8-1,1.3-2H552.6z"
+		/>
+	<rect x="561" y="21.8" class="st4" width="32" height="16.1"/>
+	<text transform="matrix(1 0 0 1 560.9894 32.125)" class="st5"><tspan x="0" y="0" class="st6 st7">enu</tspan><tspan x="22" y="0" class="st6 st7">m</tspan></text>
+	<line class="st2" x1="533" y1="42.2" x2="595" y2="42.2"/>
+	<rect x="538" y="50" class="st4" width="35" height="14.7"/>
+	<text transform="matrix(1 0 0 1 537.9894 59.4658)" class="st5"><tspan x="0" y="0" class="st6 st8">Kw</tspan><tspan x="15.3" y="0" class="st6 st8"> </tspan><tspan x="18.9" y="0" class="st6 st8">=</tspan><tspan x="25.3" y="0" class="st6 st8"> </tspan><tspan x="28.9" y="0" class="st6 st8">1</tspan></text>
+	<rect x="538" y="65.7" class="st4" width="18" height="14.7"/>
+	<text transform="matrix(1 0 0 1 537.9894 75.1338)" class="st5"><tspan x="0" y="0" class="st6 st8 st9">Q</tspan><tspan x="10.1" y="0" class="st6 st8">w</tspan></text>
+	<rect x="538" y="81.4" class="st4" width="17" height="14.7"/>
+	<text transform="matrix(1 0 0 1 537.9894 90.8008)" class="st5"><tspan x="0" y="0" class="st6 st8 st9">N</tspan><tspan x="9.1" y="0" class="st6 st8">w</tspan></text>
+	<rect x="538" y="97" class="st4" width="17" height="14.7"/>
+	<text transform="matrix(1 0 0 1 537.9894 106.4688)" class="st5"><tspan x="0" y="0" class="st6 st8 st9">R</tspan><tspan x="9.1" y="0" class="st6 st8">w</tspan></text>
+	<rect x="538" y="112.7" class="st4" width="16" height="14.7"/>
+	<text transform="matrix(1 0 0 1 537.9894 122.1357)" class="st5"><tspan x="0" y="0" class="st6 st8">P</tspan><tspan x="8.1" y="0" class="st6 st8">w</tspan></text>
+	<text transform="matrix(1 0 0 1 537.9894 137.8037)" class="st6 st8">Kb = 11</text>
+	<text transform="matrix(1 0 0 1 537.9894 153.4712)" class="st6 st8">Qb</text>
+	<text transform="matrix(1 0 0 1 537.9894 169.1387)" class="st6 st8">Nb</text>
+	<text transform="matrix(1 0 0 1 537.9894 184.8061)" class="st6 st8">Rb</text>
+	<text transform="matrix(1 0 0 1 537.9894 200.4736)" class="st6 st8">Pb</text>
+	<line class="st2" x1="533" y1="206.9" x2="595" y2="206.9"/>
+</g>
+<rect x="325" y="586.5" class="st10" width="6" height="6"/>
+<rect x="325" y="602.2" class="st10" width="6" height="6"/>
+<rect x="325" y="617.8" class="st10" width="6" height="6"/>
+<ellipse class="st11" cx="328" cy="644.5" rx="3" ry="3"/>
+<ellipse class="st11" cx="328" cy="660.2" rx="3" ry="3"/>
+<rect x="640.5" y="586.5" class="st10" width="6" height="6"/>
+<rect x="640.5" y="602.2" class="st10" width="6" height="6"/>
+<rect x="640.5" y="617.8" class="st10" width="6" height="6"/>
+<ellipse class="st11" cx="643.5" cy="644.5" rx="3" ry="3"/>
+<ellipse class="st11" cx="643.5" cy="660.2" rx="3" ry="3"/>
+<g>
+	<g>
+		<g id="King" class="st0">
+			<rect x="12.5" y="546.5" class="st1" width="269" height="126.3"/>
+			<rect x="12.5" y="546.5" class="st2" width="269" height="126.3"/>
+		</g>
+		<ellipse class="st12" cx="130.2" cy="562.5" rx="11" ry="11"/>
+		<path d="M134.4,566.7c-0.3,0.5-0.8,1-1.4,1.5c-1,0.7-2.1,1.1-3.3,1.1c-1.5,0-2.8-0.5-3.8-1.5c-1.2-1.2-1.8-2.9-1.8-5.1
+			c0-2,0.6-3.7,1.8-4.9c1.1-1.1,2.4-1.7,4-1.7c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,0.9,0.3,0.9,0.3c0.2,0,0.3-0.2,0.4-0.5l0.9-0.1
+			l0.1,4.5l-0.8,0.1c-0.5-2.3-1.7-3.5-3.3-3.5c-0.5,0-1,0.1-1.5,0.3c-0.6,0.2-1,0.5-1.3,0.8c-0.9,1-1.3,2.5-1.3,4.5
+			c0,1.8,0.5,3.2,1.4,4.2c0.8,0.8,1.8,1.2,2.9,1.2c1.3,0,2.5-0.7,3.7-2.1L134.4,566.7z"/>
+		<rect x="150.7" y="558.1" class="st4" width="25" height="16.1"/>
+		<text transform="matrix(1 0 0 1 150.7394 568.4092)" class="st5"><tspan x="0" y="0" class="st6 st7">Kin</tspan><tspan x="18.3" y="0" class="st6 st7">g</tspan></text>
+		<line class="st2" x1="13.5" y1="578.5" x2="280.5" y2="578.5"/>
+		<rect x="20.5" y="586.5" class="st10" width="6" height="6"/>
+		<text transform="matrix(1 0 0 1 32.4894 595.7505)" class="st6 st8">int count_step</text>
+		<rect x="20.5" y="602.2" class="st10" width="6" height="6"/>
+		<rect x="32.5" y="602" class="st4" width="76" height="14.7"/>
+		<text transform="matrix(1 0 0 1 32.4894 611.418)" class="st5"><tspan x="0" y="0" class="st6 st8">int</tspan><tspan x="11.6" y="0" class="st6 st8"> </tspan><tspan x="14.9" y="0" class="st6 st8">grade_Arr[4]</tspan></text>
+		<rect x="20.5" y="617.8" class="st10" width="6" height="6"/>
+		<text transform="matrix(1 0 0 1 32.4894 627.0854)" class="st6 st8">step_length</text>
+		<line class="st2" x1="13.5" y1="633.5" x2="280.5" y2="633.5"/>
+		<ellipse class="st11" cx="23.5" cy="644.5" rx="3" ry="3"/>
+		<rect x="32.5" y="641.3" class="st4" width="107" height="14.7"/>
+		<text transform="matrix(1 0 0 1 32.4894 650.7529)" class="st5"><tspan x="0" y="0" class="st6 st8">void</tspan><tspan x="20.2" y="0" class="st6 st8"> </tspan><tspan x="23.8" y="0" class="st6 st8">generate_steps()</tspan></text>
+		<ellipse class="st11" cx="23.5" cy="660.2" rx="3" ry="3"/>
+		<text transform="matrix(1 0 0 1 32.4894 666.4204)" class="st6 st8">King(int peice_x, int peice_y, int who, Node* node)</text>
+	</g>
+	<g>
+		<path id="chess-backto-King" class="st13" d="M811.6,273.2c-129,50.9-340.1,139-512.7,233.8c-21.4,11.8-43.7,25.6-64.4,39.3"/>
+		<polygon class="st13" points="809.3,266.6 830.5,265.8 814.4,279.6 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<g id="Bishop" class="st0">
+			<rect x="632.5" y="546.5" class="st1" width="281" height="126.3"/>
+			<rect x="632.5" y="546.5" class="st2" width="281" height="126.3"/>
+		</g>
+		<ellipse class="st12" cx="749.2" cy="562.5" rx="11" ry="11"/>
+		<path d="M753.4,566.7c-0.3,0.5-0.8,1-1.4,1.5c-1,0.7-2.1,1.1-3.3,1.1c-1.5,0-2.8-0.5-3.8-1.5c-1.2-1.2-1.8-2.9-1.8-5.1
+			c0-2,0.6-3.7,1.8-4.9c1.1-1.1,2.4-1.7,4-1.7c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,0.9,0.3,0.9,0.3c0.2,0,0.3-0.2,0.4-0.5l0.9-0.1
+			l0.1,4.5l-0.8,0.1c-0.5-2.3-1.7-3.5-3.3-3.5c-0.5,0-1,0.1-1.5,0.3c-0.6,0.2-1,0.5-1.3,0.8c-0.9,1-1.3,2.5-1.3,4.5
+			c0,1.8,0.5,3.2,1.4,4.2c0.8,0.8,1.8,1.2,2.9,1.2c1.3,0,2.5-0.7,3.7-2.1L753.4,566.7z"/>
+		<rect x="769.7" y="558.1" class="st4" width="39" height="16.1"/>
+		<text transform="matrix(1 0 0 1 769.7394 568.4092)" class="st5"><tspan x="0" y="0" class="st6 st7">Bisho</tspan><tspan x="32.3" y="0" class="st6 st7">p</tspan></text>
+		<line class="st2" x1="633.5" y1="578.5" x2="912.5" y2="578.5"/>
+		<text transform="matrix(1 0 0 1 652.4894 595.7505)" class="st6 st8">int count_step</text>
+		<rect x="652.5" y="602" class="st4" width="76" height="14.7"/>
+		<text transform="matrix(1 0 0 1 652.4894 611.418)" class="st5"><tspan x="0" y="0" class="st6 st8">int</tspan><tspan x="11.6" y="0" class="st6 st8"> </tspan><tspan x="14.9" y="0" class="st6 st8">grade_Arr[4]</tspan></text>
+		<text transform="matrix(1 0 0 1 652.4894 627.0854)" class="st6 st8">step_length</text>
+		<line class="st2" x1="633.5" y1="633.5" x2="912.5" y2="633.5"/>
+		<rect x="652.5" y="641.3" class="st4" width="107" height="14.7"/>
+		<text transform="matrix(1 0 0 1 652.4894 650.7529)" class="st5"><tspan x="0" y="0" class="st6 st8">void</tspan><tspan x="20.2" y="0" class="st6 st8"> </tspan><tspan x="23.8" y="0" class="st6 st8">generate_steps()</tspan></text>
+		<text transform="matrix(1 0 0 1 652.4894 666.4204)" class="st6 st8">Bishop(int peice_x, int peice_y, int who, Node* node)</text>
+	</g>
+	<g>
+		<path id="chess-backto-Bishop" class="st13" d="M831.9,465.7c-12.2,29.6-23.7,57.5-33.3,80.7"/>
+		<polygon class="st13" points="825.5,463 839.6,447.1 838.4,468.3 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<g id="Knight" class="st0">
+			<rect x="949" y="546.5" class="st1" width="278" height="126.3"/>
+			<rect x="949" y="546.5" class="st2" width="278" height="126.3"/>
+		</g>
+		<ellipse class="st12" cx="1066.2" cy="562.5" rx="11" ry="11"/>
+		<path d="M1070.4,566.7c-0.3,0.5-0.8,1-1.4,1.5c-1,0.7-2.1,1.1-3.3,1.1c-1.5,0-2.8-0.5-3.8-1.5c-1.2-1.2-1.8-2.9-1.8-5.1
+			c0-2,0.6-3.7,1.8-4.9c1.1-1.1,2.4-1.7,4-1.7c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,0.9,0.3,0.9,0.3c0.2,0,0.3-0.2,0.4-0.5l0.9-0.1
+			l0.1,4.5l-0.8,0.1c-0.5-2.3-1.7-3.5-3.3-3.5c-0.5,0-1,0.1-1.5,0.3c-0.6,0.2-1,0.5-1.3,0.8c-0.9,1-1.3,2.5-1.3,4.5
+			c0,1.8,0.5,3.2,1.4,4.2c0.8,0.8,1.8,1.2,2.9,1.2c1.3,0,2.5-0.7,3.7-2.1L1070.4,566.7z"/>
+		<rect x="1086.7" y="558.1" class="st4" width="35" height="16.1"/>
+		<text transform="matrix(1 0 0 1 1086.7394 568.4092)" class="st5"><tspan x="0" y="0" class="st6 st7">Knigh</tspan><tspan x="31.7" y="0" class="st6 st7">t</tspan></text>
+		<line class="st2" x1="950" y1="578.5" x2="1226" y2="578.5"/>
+		<rect x="957" y="586.5" class="st10" width="6" height="6"/>
+		<text transform="matrix(1 0 0 1 968.9894 595.7505)" class="st6 st8">int count_step</text>
+		<rect x="957" y="602.2" class="st10" width="6" height="6"/>
+		<rect x="969" y="602" class="st4" width="76" height="14.7"/>
+		<text transform="matrix(1 0 0 1 968.9894 611.418)" class="st5"><tspan x="0" y="0" class="st6 st8">int</tspan><tspan x="11.6" y="0" class="st6 st8"> </tspan><tspan x="14.9" y="0" class="st6 st8">grade_Arr[8]</tspan></text>
+		<rect x="957" y="617.8" class="st10" width="6" height="6"/>
+		<text transform="matrix(1 0 0 1 968.9894 627.0854)" class="st6 st8">step_length</text>
+		<line class="st2" x1="950" y1="633.5" x2="1226" y2="633.5"/>
+		<ellipse class="st11" cx="960" cy="644.5" rx="3" ry="3"/>
+		<rect x="969" y="641.3" class="st4" width="107" height="14.7"/>
+		<text transform="matrix(1 0 0 1 968.9894 650.7529)" class="st5"><tspan x="0" y="0" class="st6 st8">void</tspan><tspan x="20.2" y="0" class="st6 st8"> </tspan><tspan x="23.8" y="0" class="st6 st8">generate_steps()</tspan></text>
+		<ellipse class="st11" cx="960" cy="660.2" rx="3" ry="3"/>
+		<text transform="matrix(1 0 0 1 968.9894 666.4204)" class="st6 st8">Knight(int peice_x, int peice_y, int who, Node* node)</text>
+	</g>
+	<g>
+		<path id="chess-backto-Knight" class="st13" d="M1028.7,465.7c12.3,29.6,23.9,57.5,33.5,80.7"/>
+		<polygon class="st13" points="1022.2,468.3 1021,447.1 1035.1,462.9 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<g id="Rook" class="st0">
+			<rect x="1262" y="546.5" class="st1" width="272" height="126.3"/>
+			<rect x="1262" y="546.5" class="st2" width="272" height="126.3"/>
+		</g>
+		<ellipse class="st12" cx="1379.2" cy="562.5" rx="11" ry="11"/>
+		<path d="M1383.4,566.7c-0.3,0.5-0.8,1-1.4,1.5c-1,0.7-2.1,1.1-3.3,1.1c-1.5,0-2.8-0.5-3.8-1.5c-1.2-1.2-1.8-2.9-1.8-5.1
+			c0-2,0.6-3.7,1.8-4.9c1.1-1.1,2.4-1.7,4-1.7c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,0.9,0.3,0.9,0.3c0.2,0,0.3-0.2,0.4-0.5l0.9-0.1
+			l0.1,4.5l-0.8,0.1c-0.5-2.3-1.7-3.5-3.3-3.5c-0.5,0-1,0.1-1.5,0.3c-0.6,0.2-1,0.5-1.3,0.8c-0.9,1-1.3,2.5-1.3,4.5
+			c0,1.8,0.5,3.2,1.4,4.2c0.8,0.8,1.8,1.2,2.9,1.2c1.3,0,2.5-0.7,3.7-2.1L1383.4,566.7z"/>
+		<rect x="1399.7" y="558.1" class="st4" width="29" height="16.1"/>
+		<text transform="matrix(1 0 0 1 1399.7394 568.4092)" class="st5"><tspan x="0" y="0" class="st6 st7">Roo</tspan><tspan x="23" y="0" class="st6 st7">k</tspan></text>
+		<line class="st2" x1="1263" y1="578.5" x2="1533" y2="578.5"/>
+		<rect x="1270" y="586.5" class="st10" width="6" height="6"/>
+		<text transform="matrix(1 0 0 1 1281.9894 595.7505)" class="st6 st8">int count_step</text>
+		<rect x="1270" y="602.2" class="st10" width="6" height="6"/>
+		<rect x="1282" y="602" class="st4" width="76" height="14.7"/>
+		<text transform="matrix(1 0 0 1 1281.9894 611.418)" class="st5"><tspan x="0" y="0" class="st6 st8">int</tspan><tspan x="11.6" y="0" class="st6 st8"> </tspan><tspan x="14.9" y="0" class="st6 st8">grade_Arr[4]</tspan></text>
+		<rect x="1270" y="617.8" class="st10" width="6" height="6"/>
+		<text transform="matrix(1 0 0 1 1281.9894 627.0854)" class="st6 st8">step_length</text>
+		<line class="st2" x1="1263" y1="633.5" x2="1533" y2="633.5"/>
+		<ellipse class="st11" cx="1273" cy="644.5" rx="3" ry="3"/>
+		<rect x="1282" y="641.3" class="st4" width="107" height="14.7"/>
+		<text transform="matrix(1 0 0 1 1281.9894 650.7529)" class="st5"><tspan x="0" y="0" class="st6 st8">void</tspan><tspan x="20.2" y="0" class="st6 st8"> </tspan><tspan x="23.8" y="0" class="st6 st8">generate_steps()</tspan></text>
+		<ellipse class="st11" cx="1273" cy="660.2" rx="3" ry="3"/>
+		<text transform="matrix(1 0 0 1 1281.9894 666.4204)" class="st6 st8">Rook(int peice_x, int peice_y, int who, Node* node)</text>
+	</g>
+	<g>
+		<path id="chess-backto-Rook" class="st13" d="M1045.3,321.7c86.1,70,201.5,163.8,276.4,224.8"/>
+		<polygon class="st13" points="1040.6,327 1029.5,308.9 1049.5,316.1 		"/>
+	</g>
+</g>
+<g>
+	<g>
+		<g id="Pawn" class="st0">
+			<rect x="1569" y="530.5" class="st1" width="276" height="157.7"/>
+			<rect x="1569" y="530.5" class="st2" width="276" height="157.7"/>
+		</g>
+		<ellipse class="st12" cx="1687.2" cy="546.5" rx="11" ry="11"/>
+		<path d="M1691.4,550.7c-0.3,0.5-0.8,1-1.4,1.5c-1,0.7-2.1,1.1-3.3,1.1c-1.5,0-2.8-0.5-3.8-1.5c-1.2-1.2-1.8-2.9-1.8-5.1
+			c0-2,0.6-3.7,1.8-4.9c1.1-1.1,2.4-1.7,4-1.7c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,0.9,0.3,0.9,0.3c0.2,0,0.3-0.2,0.4-0.5l0.9-0.1
+			l0.1,4.5l-0.8,0.1c-0.5-2.3-1.7-3.5-3.3-3.5c-0.5,0-1,0.1-1.5,0.3c-0.6,0.2-1,0.5-1.3,0.8c-0.9,1-1.3,2.5-1.3,4.5
+			c0,1.8,0.5,3.2,1.4,4.2c0.8,0.8,1.8,1.2,2.9,1.2c1.3,0,2.5-0.7,3.7-2.1L1691.4,550.7z"/>
+		<rect x="1707.7" y="542.1" class="st4" width="31" height="16.1"/>
+		<text transform="matrix(1 0 0 1 1707.7394 552.4092)" class="st5"><tspan x="0" y="0" class="st6 st7">Paw</tspan><tspan x="24.3" y="0" class="st6 st7">n</tspan></text>
+		<line class="st2" x1="1570" y1="562.5" x2="1844" y2="562.5"/>
+		<rect x="1577" y="570.5" class="st10" width="6" height="6"/>
+		<text transform="matrix(1 0 0 1 1588.9894 579.7505)" class="st6 st8">int count_step</text>
+		<rect x="1577" y="586.2" class="st10" width="6" height="6"/>
+		<rect x="1589" y="586" class="st4" width="76" height="14.7"/>
+		<text transform="matrix(1 0 0 1 1588.9894 595.418)" class="st5"><tspan x="0" y="0" class="st6 st8">int</tspan><tspan x="11.6" y="0" class="st6 st8"> </tspan><tspan x="14.9" y="0" class="st6 st8">grade_Arr[3]</tspan></text>
+		<rect x="1577" y="601.8" class="st10" width="6" height="6"/>
+		<text transform="matrix(1 0 0 1 1588.9894 611.0854)" class="st6 st8">step_length</text>
+		<line class="st2" x1="1570" y1="617.5" x2="1844" y2="617.5"/>
+		<rect x="1577" y="625.5" class="st14" width="6" height="6"/>
+		<text transform="matrix(1 0 0 1 1588.9894 634.7529)" class="st6 st8">bool can_eat(int x, int y)</text>
+		<rect x="1577" y="641.2" class="st14" width="6" height="6"/>
+		<rect x="1589" y="641" class="st4" width="137" height="14.7"/>
+		<text transform="matrix(1 0 0 1 1588.9894 650.4199)" class="st5"><tspan x="0" y="0" class="st6 st8">bool</tspan><tspan x="20.8" y="0" class="st6 st8"> </tspan><tspan x="24" y="0" class="st6 st8">is_first_step(int</tspan><tspan x="98" y="0" class="st6 st8"> </tspan><tspan x="101.2" y="0" class="st6 st8">x,</tspan><tspan x="109.8" y="0" class="st6 st8"> </tspan><tspan x="113" y="0" class="st6 st8">int</tspan><tspan x="124.6" y="0" class="st6 st8"> </tspan><tspan x="127.8" y="0" class="st6 st8">y)</tspan></text>
+		<ellipse class="st11" cx="1580" cy="659.8" rx="3" ry="3"/>
+		<rect x="1589" y="656.6" class="st4" width="107" height="14.7"/>
+		<text transform="matrix(1 0 0 1 1588.9894 666.0879)" class="st5"><tspan x="0" y="0" class="st6 st8">void</tspan><tspan x="20.2" y="0" class="st6 st8"> </tspan><tspan x="23.8" y="0" class="st6 st8">generate_steps()</tspan></text>
+		<ellipse class="st11" cx="1580" cy="675.5" rx="3" ry="3"/>
+		<text transform="matrix(1 0 0 1 1588.9894 681.7554)" class="st6 st8">Pawn(int peice_x, int peice_y, int who, Node* node)</text>
+	</g>
+	<g>
+		<path id="chess-backto-Pawn" class="st13" d="M1048.1,274.4c127.1,51.5,334,139.6,503.9,232.6c13.1,7.2,26.6,15.1,39.8,23.3"/>
+		<polygon class="st13" points="1045.5,280.9 1029.5,266.9 1050.7,267.9 		"/>
+	</g>
+</g>
+<path id="chess-backto-Bishop_1_" class="st13" d="M1260.4,94.9c-32,0.2-62.2,0.4-87.2,0.5"/>
+<path id="chess-backto-Bishop_3_" class="st13" d="M1114.1,65.4c-32,0.2-62.2,0.4-87.2,0.5"/>
+<g>
+	<g class="st0">
+		<rect x="1255.2" y="84.9" class="st1" width="45" height="71.8"/>
+		<rect x="1255.2" y="84.9" class="st2" width="45" height="71.8"/>
+	</g>
+	<rect x="1262.2" y="91" class="st4" width="31" height="16.1"/>
+	<text transform="matrix(1 0 0 1 1262.2394 101.3483)" class="st5"><tspan x="0" y="0" class="st6 st7">Piec</tspan><tspan x="24.3" y="0" class="st6 st7">e</tspan></text>
+	<line class="st2" x1="1256.2" y1="106" x2="1299.2" y2="106"/>
+	<rect x="1261.2" y="113.4" class="st4" width="24" height="13.4"/>
+	<text transform="matrix(1 0 0 1 1261.2394 122.0314)" class="st5"><tspan x="0" y="0" class="st6 st15">int</tspan><tspan x="10.6" y="0" class="st6 st15 st16"> </tspan><tspan x="16.2" y="0" class="st6 st15">id</tspan></text>
+	<rect x="1261.2" y="127.7" class="st4" width="20" height="13.4"/>
+	<text transform="matrix(1 0 0 1 1261.2394 136.2746)" class="st5"><tspan x="0" y="0" class="st6 st15">int</tspan><tspan x="10.6" y="0" class="st6 st15 st9"> </tspan><tspan x="15" y="0" class="st6 st15">x</tspan></text>
+	<rect x="1261.2" y="141.9" class="st4" width="20" height="13.4"/>
+	<text transform="matrix(1 0 0 1 1261.2394 150.5178)" class="st5"><tspan x="0" y="0" class="st6 st15">int</tspan><tspan x="10.6" y="0" class="st6 st15 st9"> </tspan><tspan x="15" y="0" class="st6 st15">y</tspan></text>
+</g>
+<g>
+	<g class="st0">
+		<rect x="1077.2" y="61.2" class="st1" width="99" height="57.6"/>
+		<rect x="1077.2" y="61.2" class="st2" width="99" height="57.6"/>
+	</g>
+	<rect x="1111.7" y="67.3" class="st4" width="30" height="16.1"/>
+	<text transform="matrix(1 0 0 1 1111.7394 77.6271)" class="st5"><tspan x="0" y="0" class="st6 st7">Nod</tspan><tspan x="23.3" y="0" class="st6 st7">e</tspan></text>
+	<line class="st2" x1="1078.2" y1="82.3" x2="1175.2" y2="82.3"/>
+	<rect x="1083.2" y="89.7" class="st4" width="86" height="13.4"/>
+	<text transform="matrix(1 0 0 1 1083.2394 98.3102)" class="st5"><tspan x="0" y="0" class="st6 st15">struct</tspan><tspan x="24.4" y="0" class="st6 st15 st17"> </tspan><tspan x="30.8" y="0" class="st6 st15">Piece</tspan><tspan x="55.8" y="0" class="st6 st15 st17"> </tspan><tspan x="62.1" y="0" class="st6 st15">piece</tspan></text>
+	<rect x="1083.2" y="104" class="st4" width="87" height="13.4"/>
+	<text transform="matrix(1 0 0 1 1083.2394 112.5534)" class="st5"><tspan x="0" y="0" class="st6 st15">struct</tspan><tspan x="24.4" y="0" class="st6 st15 st9"> </tspan><tspan x="28.8" y="0" class="st6 st15">Node*</tspan><tspan x="56.6" y="0" class="st6 st15 st9"> </tspan><tspan x="60.9" y="0" class="st6 st15">pNext</tspan></text>
+</g>
+<g>
+	<path id="chess-backto-Bishop_2_" class="st13" d="M830.4,83.8c-32,0.4-62.2,0.8-87.2,1.1"/>
+	<g>
+		<g class="st0">
+			<rect x="662.2" y="78.7" class="st1" width="83" height="100.3"/>
+			<rect x="662.2" y="78.7" class="st2" width="83" height="100.3"/>
+		</g>
+		<rect x="691.7" y="84.8" class="st4" width="24" height="16.1"/>
+		<text transform="matrix(1 0 0 1 691.704 95.1211)" class="st5"><tspan x="0" y="0" class="st6 st7">ste</tspan><tspan x="17.3" y="0" class="st6 st7">p</tspan></text>
+		<line class="st2" x1="663.2" y1="99.8" x2="744.2" y2="99.8"/>
+		<rect x="668.2" y="107.2" class="st4" width="71" height="13.4"/>
+		<text transform="matrix(1 0 0 1 668.204 115.8047)" class="st5"><tspan x="0" y="0" class="st6 st15">bool</tspan><tspan x="18.9" y="0" class="st6 st15 st18"> </tspan><tspan x="27.6" y="0" class="st6 st15">moveable</tspan></text>
+		<rect x="668.2" y="121.5" class="st4" width="45" height="13.4"/>
+		<text transform="matrix(1 0 0 1 668.204 130.0469)" class="st5"><tspan x="0" y="0" class="st6 st15">int</tspan><tspan x="10.6" y="0" class="st6 st15 st19"> </tspan><tspan x="17.8" y="0" class="st6 st15">length</tspan></text>
+		<rect x="668.2" y="135.7" class="st4" width="42" height="13.4"/>
+		<text transform="matrix(1 0 0 1 668.204 144.291)" class="st5"><tspan x="0" y="0" class="st6 st15">int</tspan><tspan x="10.6" y="0" class="st6 st15 st17"> </tspan><tspan x="16.4" y="0" class="st6 st15">grade</tspan></text>
+		<rect x="668.2" y="149.9" class="st4" width="40" height="13.4"/>
+		<text transform="matrix(1 0 0 1 668.204 158.5332)" class="st5"><tspan x="0" y="0" class="st6 st15">int</tspan><tspan x="10.6" y="0" class="st6 st15 st16"> </tspan><tspan x="15.6" y="0" class="st6 st15">src[2]</tspan></text>
+		<rect x="668.2" y="164.2" class="st4" width="46" height="13.4"/>
+		<text transform="matrix(1 0 0 1 668.204 172.7773)" class="st5"><tspan x="0" y="0" class="st6 st15">int</tspan><tspan x="10.6" y="0" class="st6 st15 st16"> </tspan><tspan x="16" y="0" class="st6 st15">dest[2]</tspan></text>
+	</g>
+</g>
+<g>
+	<g id="chess" class="st0">
+		<rect x="830.5" y="7" class="st1" width="199" height="439.7"/>
+		<rect x="830.5" y="7" class="st2" width="199" height="439.7"/>
+	</g>
+	<ellipse class="st12" cx="908.7" cy="23" rx="11" ry="11"/>
+	<path d="M912.9,27.2c-0.3,0.5-0.8,1-1.4,1.5c-1,0.7-2.1,1.1-3.3,1.1c-1.5,0-2.8-0.5-3.8-1.5c-1.2-1.2-1.8-2.9-1.8-5.1
+		c0-2,0.6-3.7,1.8-4.9c1.1-1.1,2.4-1.7,4-1.7c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,0.9,0.3,0.9,0.3c0.2,0,0.3-0.2,0.4-0.5l0.9-0.1l0.1,4.5
+		l-0.8,0.1c-0.5-2.3-1.7-3.5-3.3-3.5c-0.5,0-1,0.1-1.5,0.3c-0.6,0.2-1,0.5-1.3,0.8c-0.9,1-1.3,2.5-1.3,4.5c0,1.8,0.5,3.2,1.4,4.2
+		c0.8,0.8,1.8,1.2,2.9,1.2c1.3,0,2.5-0.7,3.7-2.1L912.9,27.2z"/>
+	<rect x="929.2" y="18.6" class="st4" width="34" height="16.1"/>
+	<text transform="matrix(1 0 0 1 929.2394 28.9092)" class="st5"><tspan x="0" y="0" class="st6 st7">ches</tspan><tspan x="28" y="0" class="st6 st7">s</tspan></text>
+	<line class="st2" x1="831.5" y1="39" x2="1028.5" y2="39"/>
+	<ellipse class="st20" cx="841.5" cy="50" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 56.2505)" class="st6 st8">const int border = 8</text>
+	<ellipse class="st20" cx="841.5" cy="65.7" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 71.918)" class="st6 st8">struct Node* b</text>
+	<ellipse class="st20" cx="841.5" cy="81.3" rx="3" ry="3"/>
+	<rect x="850.5" y="78.1" class="st4" width="94" height="14.7"/>
+	<text transform="matrix(1 0 0 1 850.4894 87.585)" class="st5"><tspan x="0" y="0" class="st6 st8">struct</tspan><tspan x="26.9" y="0" class="st6 st8"> </tspan><tspan x="30.8" y="0" class="st6 st8">step</tspan><tspan x="51.6" y="0" class="st6 st8"> </tspan><tspan x="55.5" y="0" class="st6 st8">steps[8]</tspan></text>
+	<ellipse class="st20" cx="841.5" cy="97" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 103.2529)" class="st6 st8">int x</text>
+	<ellipse class="st20" cx="841.5" cy="112.7" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 118.9204)" class="st6 st8">int y</text>
+	<ellipse class="st20" cx="841.5" cy="128.3" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 134.5879)" class="st6 st8">int me</text>
+	<ellipse class="st20" cx="841.5" cy="144" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 150.2554)" class="st6 st8">int id</text>
+	<ellipse class="st20" cx="841.5" cy="159.7" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 165.9229)" class="st6 st8">int shift_me</text>
+	<ellipse class="st20" cx="841.5" cy="175.3" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 181.5903)" class="st6 st8">int dest_x</text>
+	<ellipse class="st20" cx="841.5" cy="191" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 197.2578)" class="st6 st8">int dest_y</text>
+	<ellipse class="st20" cx="841.5" cy="206.7" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 212.9253)" class="st6 st8">int grade</text>
+	<ellipse class="st20" cx="841.5" cy="222.3" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 228.5928)" class="st6 st8">bool many_steps</text>
+	<line class="st2" x1="831.5" y1="235" x2="1028.5" y2="235"/>
+	<ellipse class="st11" cx="841.5" cy="246" rx="3" ry="3"/>
+	<rect x="850.5" y="242.8" class="st4" width="161" height="14.7"/>
+	<text transform="matrix(1 0 0 1 850.4894 252.2598)" class="st5"><tspan x="0" y="0" class="st6 st8">int</tspan><tspan x="11.6" y="0" class="st6 st8"> </tspan><tspan x="14.9" y="0" class="st6 st8">dest_has_chess(int</tspan><tspan x="109.7" y="0" class="st6 st8"> </tspan><tspan x="112.9" y="0" class="st6 st8">dx,</tspan><tspan x="127.6" y="0" class="st6 st8"> </tspan><tspan x="130.8" y="0" class="st6 st8">int</tspan><tspan x="142.5" y="0" class="st6 st8"> </tspan><tspan x="145.7" y="0" class="st6 st8">dy)</tspan></text>
+	<ellipse class="st11" cx="841.5" cy="261.7" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 267.9277)" class="st6 st8">int generate_grade(int count_steps)</text>
+	<ellipse class="st11" cx="841.5" cy="277.3" rx="3" ry="3"/>
+	<rect x="850.5" y="274.1" class="st4" width="107" height="14.7"/>
+	<text transform="matrix(1 0 0 1 850.4894 283.5947)" class="st5"><tspan x="0" y="0" class="st6 st8">void</tspan><tspan x="20.2" y="0" class="st6 st8"> </tspan><tspan x="23.8" y="0" class="st6 st8">generate_steps()</tspan></text>
+	<ellipse class="st11" cx="841.5" cy="293" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 299.2627)" class="st6 st8">int hi_grade(int op_id, int dx, int dy)</text>
+	<ellipse class="st11" cx="841.5" cy="308.7" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 314.9302)" class="st6 st8">bool is_that_chess_me(int id)</text>
+	<ellipse class="st11" cx="841.5" cy="324.3" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 330.5977)" class="st6 st8">step go_F(int steps)</text>
+	<ellipse class="st11" cx="841.5" cy="340" rx="3" ry="3"/>
+	<rect x="850.5" y="336.8" class="st4" width="97" height="14.7"/>
+	<text transform="matrix(1 0 0 1 850.4894 346.2646)" class="st5"><tspan x="0" y="0" class="st6 st8">step</tspan><tspan x="20.8" y="0" class="st6 st8"> </tspan><tspan x="24" y="0" class="st6 st8">go_L(int</tspan><tspan x="63.8" y="0" class="st6 st8"> </tspan><tspan x="67" y="0" class="st6 st8">steps)</tspan></text>
+	<ellipse class="st11" cx="841.5" cy="355.7" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 361.9326)" class="st6 st8">step go_R(int steps)</text>
+	<ellipse class="st11" cx="841.5" cy="371.3" rx="3" ry="3"/>
+	<rect x="850.5" y="368.2" class="st4" width="98" height="14.7"/>
+	<text transform="matrix(1 0 0 1 850.4894 377.5996)" class="st5"><tspan x="0" y="0" class="st6 st8">step</tspan><tspan x="20.8" y="0" class="st6 st8"> </tspan><tspan x="23.9" y="0" class="st6 st8">go_B(int</tspan><tspan x="64.9" y="0" class="st6 st8"> </tspan><tspan x="68" y="0" class="st6 st8">steps)</tspan></text>
+	<ellipse class="st11" cx="841.5" cy="387" rx="3" ry="3"/>
+	<rect x="850.5" y="383.8" class="st4" width="104" height="14.7"/>
+	<text transform="matrix(1 0 0 1 850.4894 393.2676)" class="st5"><tspan x="0" y="0" class="st6 st8">step</tspan><tspan x="20.8" y="0" class="st6 st8"> </tspan><tspan x="23.9" y="0" class="st6 st8">go_BL(int</tspan><tspan x="71" y="0" class="st6 st8"> </tspan><tspan x="74" y="0" class="st6 st8">steps)</tspan></text>
+	<ellipse class="st11" cx="841.5" cy="402.7" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 408.9351)" class="st6 st8">step go_BR(int steps)</text>
+	<ellipse class="st11" cx="841.5" cy="418.4" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 424.6025)" class="st6 st8">step go_FL(int steps)</text>
+	<ellipse class="st11" cx="841.5" cy="434" rx="3" ry="3"/>
+	<text transform="matrix(1 0 0 1 850.4894 440.27)" class="st6 st8">step go_FR(int steps)</text>
+</g>
+<g>
+	<g>
+		<path id="chess-backto-Queen" class="st13" d="M811.9,432.4c-104.4,40-244.7,93.8-335.9,128.7"/>
+		<polygon class="st13" points="809.4,425.9 830.6,425.3 814.4,439 		"/>
+	</g>
+	<g>
+		<g id="Queen" class="st0">
+			<rect x="317" y="546.5" class="st1" width="280" height="126.3"/>
+			<rect x="317" y="546.5" class="st2" width="280" height="126.3"/>
+		</g>
+		<ellipse class="st12" cx="434.2" cy="562.5" rx="11" ry="11"/>
+		<path d="M438.4,566.7c-0.3,0.5-0.8,1-1.4,1.5c-1,0.7-2.1,1.1-3.3,1.1c-1.5,0-2.8-0.5-3.8-1.5c-1.2-1.2-1.8-2.9-1.8-5.1
+			c0-2,0.6-3.7,1.8-4.9c1.1-1.1,2.4-1.7,4-1.7c0.6,0,1.3,0.1,1.9,0.3c0.6,0.2,0.9,0.3,0.9,0.3c0.2,0,0.3-0.2,0.4-0.5l0.9-0.1
+			l0.1,4.5l-0.8,0.1c-0.5-2.3-1.7-3.5-3.3-3.5c-0.5,0-1,0.1-1.5,0.3c-0.6,0.2-1,0.5-1.3,0.8c-0.9,1-1.3,2.5-1.3,4.5
+			c0,1.8,0.5,3.2,1.4,4.2c0.8,0.8,1.8,1.2,2.9,1.2c1.3,0,2.5-0.7,3.7-2.1L438.4,566.7z"/>
+		<rect x="454.7" y="558.1" class="st4" width="37" height="16.1"/>
+		<text transform="matrix(1 0 0 1 454.7393 568.4092)" class="st5"><tspan x="0" y="0" class="st6 st7">Quee</tspan><tspan x="30.3" y="0" class="st6 st7">n</tspan></text>
+		<line class="st2" x1="318" y1="578.5" x2="596" y2="578.5"/>
+		<text transform="matrix(1 0 0 1 336.9893 595.7505)" class="st6 st8">int count_step</text>
+		<rect x="337" y="602" class="st4" width="76" height="14.7"/>
+		<text transform="matrix(1 0 0 1 336.9893 611.418)" class="st5"><tspan x="0" y="0" class="st6 st8">int</tspan><tspan x="11.6" y="0" class="st6 st8"> </tspan><tspan x="14.9" y="0" class="st6 st8">grade_Arr[8]</tspan></text>
+		<text transform="matrix(1 0 0 1 336.9893 627.0854)" class="st6 st8">step_length</text>
+		<line class="st2" x1="318" y1="633.5" x2="596" y2="633.5"/>
+		<rect x="337" y="641.3" class="st4" width="107" height="14.7"/>
+		<text transform="matrix(1 0 0 1 336.9893 650.7529)" class="st5"><tspan x="0" y="0" class="st6 st8">void</tspan><tspan x="20.2" y="0" class="st6 st8"> </tspan><tspan x="23.8" y="0" class="st6 st8">generate_steps()</tspan></text>
+		<text transform="matrix(1 0 0 1 336.9893 666.4204)" class="st6 st8">Queen(int peice_x, int peice_y, int who, Node* node)</text>
+	</g>
+</g>
+</svg>

@@ -1,0 +1,15 @@
+@startuml
+
+skinparam sequenceMessageAlign center
+[-> yzu1052056.exe : me ,chess.txt   
+yzu1052056.exe-> 棋盤檔案: 讀取棋盤
+棋盤檔案 -> Nodes: 資料傳入鏈結串列
+Nodes <- "set_chesses( )" :走訪
+Nodes -> "set_chesses( )" :回傳節點資料\n(peice_id, x, y)
+"set_chesses( )" -> 棋子類別:透過peice_id減去\n列舉時不同的差得到6種棋子
+棋子類別 --> 棋子類別 : 呼叫自身generate_steps( )方法\n取得自身不同走法時的權重分數\n計算出分數最高的棋子與移動方式
+要移動的棋子 <- 棋子類別 : 傳出原始位置、目標位置\n(srcX,srcY)、(destX,destY)
+
+要移動的棋子 -> 棋盤檔案 : 寫入新的位置
+
+@enduml

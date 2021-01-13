@@ -317,6 +317,7 @@ int* get_Chess(){
 };
 
 void set_chesses(int who ,struct Node* root){
+	cout << "SETTing Chess ......" << endl;
     int shift_who=(who>1?10:0);
     int highest_index=0;
     struct get_Steps peices[16];
